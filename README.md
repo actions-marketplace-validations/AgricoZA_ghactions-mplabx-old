@@ -4,8 +4,9 @@ This action will build a MPLAB X project.
 
 It runs on Linux Ubuntu 18.04 and uses:
 
-- MPLAB 5.25
-- xc16 v1.41
+- MPLAB 5.40
+- xc8 v2.30
+- xc16 v1.60
 - Peripheral libraries for PIC24/ds24 v2.0
 
 ## Inputs
