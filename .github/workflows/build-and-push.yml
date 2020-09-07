@@ -1,0 +1,19 @@
+# -*- indent-tabs-mode: nil -*-
+
+name: Build and Push
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: docker/build-push-action@v1
+        with:
+          username: ${{ secrets.GHCR_USER }}
+          password: ${{ secrets.GHCR_PAT }}
+          registry: ghcr.io
+          repository: ${{ github.repository }}
+          tag_with_ref: true
