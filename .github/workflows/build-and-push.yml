@@ -15,5 +15,5 @@ jobs:
           username: ${{ secrets.GHCR_USER }}
           password: ${{ secrets.GHCR_PAT }}
           registry: ghcr.io
-          repository: ${{ github.repository }}/ghactions-mplabx
+          repository: ${{ github.repository }}
           tag_with_ref: true
