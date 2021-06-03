@@ -30,6 +30,6 @@ jobs:
           context: .
           pull: true
           push: true
-          cache-from: type=registry,ref=ghcr.io/FlippieVanDyk/ghactions-mplabx-xc32:latest
+          cache-from: type=registry,ref=ghcr.io/FlippieVanDyk/ghactions-mplabx-xc32-plib:latest
           cache-to: type=inline
-          tags: ghcr.io/FlippieVanDyk/ghactions-mplabx-xc32:latest
+          tags: ghcr.io/FlippieVanDyk/ghactions-mplabx-xc32-plib:latest

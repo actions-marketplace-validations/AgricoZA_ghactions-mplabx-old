@@ -1,7 +1,7 @@
-name: "MplabX XC32 build with Plib"
-description: "This action builds an MPLABX/xc16 project in a Linux container."
+name: "MplabX XC32 build with Legacy Plib"
+description: "This action builds an MPLABX/xc32 with legacy libraries project in a Linux container."
 branding:
-  icon: wind
+  icon: package
   color: blue
 
 inputs:
@@ -15,7 +15,7 @@ inputs:
 
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "docker://ghcr.io/FlippieVanDyk/ghactions-mplabx-xc32-plib:latest"
   args:
     - ${{ inputs.project }}
     - ${{ inputs.configuration }}
