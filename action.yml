@@ -1,7 +1,7 @@
 name: "MplabX XC32 build with Plib"
 description: "This action builds an MPLABX/xc16 project in a Linux container."
 branding:
-  icon: wind
+  icon: package
   color: blue
 
 inputs:
