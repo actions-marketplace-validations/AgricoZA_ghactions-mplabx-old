@@ -40,7 +40,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Build library
-        uses: FlippievanDyk/ghactions-mplabx@master
+        uses: AgricoZa/ghactions-mplabx@master
         with:
           project: firmware.X
           configuration: default
